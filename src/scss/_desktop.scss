@@ -1,7 +1,10 @@
 html {
     font-size: 62.5%;
     body {
-        background-color: grey;
+        background-image: url('../images/Background.svg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
         font-family: $mainFont;
         nav {
             height: 4.8rem;
@@ -36,13 +39,36 @@ html {
             }
         }
         .callout {
-            height: 100vh;
+            text-align: center;
+            .calloutText {
+                text-align: left;
+                display: inline-block;
+                margin: 0 auto;
+                padding-top: 4.8rem;
+                height: 100vh;
+                h1,
+                h2 {
+                    color: $contentBackground;
+                }
+                h1 {
+                    width: 3em;
+                    font-size: 4.8rem;
+                    margin-bottom: 0;
+                } h2 {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    padding-top: 0.5em;
+                    padding-bottom: 0;
+                    padding-left: 2em;
+                    width: 12em;
+                    font-size: 2.4rem;
+                }
+            }
         }
         .scrollOffset {
             padding-top: 4.8rem;
             .pageContent {
                 background-color: $contentBackground;
-                box-shadow: 0 0 5px 3px $contentFontColour;
                 width: 80%;
                 margin: 0 auto;
                 height: 200vh;
