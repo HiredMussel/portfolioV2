@@ -2,6 +2,10 @@ $linkInactive : #AEAEAE;
 $linkActive : #FFFFFF;
 $mainFont : 'Nunito', sans-serif;
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
     body {
@@ -21,13 +25,19 @@ html {
                 float: right;
                 padding-top: 1.6rem;
                 a {
+                    display: inline-block;
                     font-family: $mainFont;
                     color: $linkInactive;
                     text-decoration: none;
                     font-size: 1.6rem;
-                    padding-left: 0.6rem;
+                    font-weight: 400;
+                    width: 10rem;
+                    text-align: center;
+                    transition: 0.3s;
                     &:hover {
                         color: $linkActive;
+                        font-weight: 700;
+                        transition: 0.3s;
                     }
                 }
             }
