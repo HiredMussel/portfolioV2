@@ -12,7 +12,7 @@ html {
             top: 0;
             width: 100%;
             background-color: #000000;
-            opacity: 0.9;
+            z-index: 9999;
             .logoContainer {
                 height: 4.8rem;
                 width: auto;
@@ -44,7 +44,7 @@ html {
                 text-align: left;
                 display: inline-block;
                 margin: 0 auto;
-                padding-top: 4.8rem;
+                padding-top: 10vh;
                 height: 100vh;
                 h1,
                 h2 {
@@ -68,13 +68,62 @@ html {
         .scrollOffset {
             padding-top: 4.8rem;
             .pageContent {
+                font-size: 1.6rem;
                 background-color: $contentBackground;
                 width: 80%;
+                padding-top: 1.6rem;
                 margin: 0 auto;
                 height: 200vh;
                 section {
-                    padding: 1.6rem;
+                    padding: 0;
                     margin: 0;
+                    h1 {
+                        text-align: center;
+                    }
+                    p {
+                        padding: 0 1rem;
+                    }
+                }
+                .portfolioContainer {
+                    display: flex;
+                    margin: 0 auto;
+                    width: 100rem;
+                    justify-content: space-around;
+                    .portfolioItemTwoCol {
+                        width: 23.5rem;
+                        height: 23.5rem;
+                        position: relative;
+                        background-color: black;
+                        &:hover  .portfolioContent {
+                        opacity: 1;
+                        transition: 0.3s;
+                        z-index: 1;
+                        }
+                        h1 {
+                            padding: 1.6rem;
+                            margin: 0;
+                        }
+                        p {
+                            padding: 0 1rem;
+                            margin: 0;
+                            font-size: 1.2rem;
+                            line-height: 1.6rem;
+                        }
+                        .portfolioContent {
+                            background-color: black;
+                            display: inline-block;
+                            position: absolute;
+                            height: 100%;
+                            width: 100%;
+                            opacity: 0;
+                            top: 0;
+                            left: 0;
+                            color: $contentBackground;
+                            background-color: rgba(0,0,0,0.7);
+                            transition: 0.3s;
+                            z-index: -1;
+                        }
+                    }
                 }
                 #portfolio,
                 #contact {

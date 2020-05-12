@@ -1,0 +1,25 @@
+html {
+    scrollbar-color: $scrollbarTrack $scrollbarBackground;
+    scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    position: fixed;
+}
+::-webkit-scrollbar-track {
+    background: #000000; 
+}
+::-webkit-scrollbar-thumb {
+    background: #AEAEAE; 
+    opacity: 0.6;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+    &:hover {
+    background: #DEDEDE; 
+    opacity: 0.6;
+    background-clip: content-box;
+    }
+}
