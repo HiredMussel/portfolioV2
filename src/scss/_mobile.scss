@@ -1,0 +1,16 @@
+@media (max-width: $breakpointMobile) {
+    html {
+        body {
+            nav {
+                text-align: center;
+                .logoContainer {
+                    display: none;
+                }
+                .navButtons {
+                    display: inline-block;
+                    float: none;
+                }
+            }
+        }
+    }
+}

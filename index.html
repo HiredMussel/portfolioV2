@@ -9,26 +9,37 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
     </head>
-    <body>
+    <body onTouchStart="">
         <nav>
             <a href="#">
                 <img class="logoContainer" src="dist/images/Logo.svg">
             </a>
             <div class="navButtons">
                 <a href="#aboutMe">About Me</a>
-                <a href="#">My Projects</a>
-                <a href="#">Contact Me</a>
+                <a href="#portfolio">My Projects</a>
+                <a href="#contact">Contact Me</a>
             </div>
         </nav>
         <main>
             <div class="callout">
 
             </div>
-            <div class="pageContent">
-                <section id="aboutMe">
-                    <h1>About Me</h1>
-                    <p>Lorem ipsum dolor est</p>
-                </section>
+            <div class="scrollOffset" id="aboutMe">
+                <div class="pageContent">
+                    <section id="bio">
+                        <h1>About Me</h1>
+                        <p>Lorem ipsum dolor est</p>
+                    </section>
+                    <section id="portfolio">
+                        <h1>My Projects</h1>
+                        <div class="portfolioContainer">
+
+                        </div>
+                    </section>
+                    <section id="contact">
+                        <h1>Get in Touch</h1>
+                    </section>
+                </div>
             </div>
         </main>
     </body>

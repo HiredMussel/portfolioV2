@@ -1,0 +1,60 @@
+html {
+    font-size: 62.5%;
+    body {
+        background-color: grey;
+        font-family: $mainFont;
+        nav {
+            height: 4.8rem;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #000000;
+            opacity: 0.9;
+            .logoContainer {
+                height: 4.8rem;
+                width: auto;
+            }
+            .navButtons {
+                float: right;
+                padding-top: 1.6rem;
+                a {
+                    display: inline-block;
+                    font-family: $mainFont;
+                    color: $linkInactive;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    font-weight: 400;
+                    width: 10rem;
+                    text-align: center;
+                    transition: 0.3s;
+                    &:hover {
+                        color: $contentBackground;
+                        font-weight: 700;
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        .callout {
+            height: 100vh;
+        }
+        .scrollOffset {
+            padding-top: 4.8rem;
+            .pageContent {
+                background-color: $contentBackground;
+                box-shadow: 0 0 5px 3px $contentFontColour;
+                width: 80%;
+                margin: 0 auto;
+                height: 200vh;
+                section {
+                    padding: 1.6rem;
+                    margin: 0;
+                }
+                #portfolio,
+                #contact {
+                    padding-top: 4.8rem;
+                }
+            }
+        }
+    }
+}
