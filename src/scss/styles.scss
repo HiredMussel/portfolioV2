@@ -1,6 +1,12 @@
+$linkInactive : #AEAEAE;
+$linkActive : #FFFFFF;
+$mainFont : 'Nunito', sans-serif;
+
 html {
     font-size: 62.5%;
     body {
+        background-color: grey;
+        font-family: $mainFont;
         nav {
             position: fixed;
             top: 0;
@@ -13,11 +19,21 @@ html {
             }
             .navButtons {
                 float: right;
+                padding-top: 1.6rem;
+                a {
+                    font-family: $mainFont;
+                    color: $linkInactive;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    padding-left: 0.6rem;
+                    &:hover {
+                        color: $linkActive;
+                    }
+                }
             }
         }
         .callout {
             height: 100vh;
-            background-color: grey;
         }
     }
 }
