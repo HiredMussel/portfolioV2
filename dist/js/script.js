@@ -1,4 +1,4 @@
-var spacePortfolio = (function () {
+var spacePortfolio = function () {
     var portfolioItems = document.querySelectorAll('.portfolioItem');
     var itemNum = portfolioItems.length;
     var counter = 0;
@@ -31,4 +31,20 @@ var spacePortfolio = (function () {
     if (itemNum % 2) {
         portfolioItems.item(itemNum - 1).classList.add('sSpan');
     }
+};
+(function doHandlebars() {
+    fetch('src/portfolio.json').then(function (response) {
+        return response.json();
+    }).then(function (response) {
+        var portfolioJSON = response;
+        fetch('src/templates/portfolioItem.hbs').then(function (response) {
+            return response.text();
+        }).then(function (response) {
+            var HBTemplate = response;
+            var template = Handlebars.compile(HBTemplate);
+            var html = template(portfolioJSON);
+            document.querySelector('.portfolioContainer').innerHTML = html;
+            spacePortfolio();
+        });
+    });
 })();

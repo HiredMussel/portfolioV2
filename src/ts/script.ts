@@ -1,4 +1,4 @@
-const spacePortfolio : void = (() => {
+const spacePortfolio = () => {
     let portfolioItems = document.querySelectorAll('.portfolioItem');
     
     const itemNum : number = portfolioItems.length;
@@ -31,4 +31,24 @@ const spacePortfolio : void = (() => {
     if (itemNum % 2) {
         portfolioItems.item(itemNum - 1).classList.add('sSpan');
     }
+};
+
+(function doHandlebars() {
+    fetch('src/portfolio.json').then((response)=>{
+        return response.json();
+    }).then((response) =>{
+        const portfolioJSON : string = response;
+        fetch('src/templates/portfolioItem.hbs').then((response) => {
+            return response.text()
+        }).then((response) => {
+            const HBTemplate = response;
+            
+            const template = Handlebars.compile(HBTemplate);
+            const html : string = template(portfolioJSON);
+
+            document.querySelector('.portfolioContainer').innerHTML = html;
+
+            spacePortfolio();
+        });
+    });
 })();

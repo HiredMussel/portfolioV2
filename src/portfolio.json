@@ -1,0 +1,37 @@
+{
+    "portfolioItems" : [{
+        "title" : "Lorem Ipsum",
+        "description" : "Lorem Ipsum Dolor est sit amet",
+        "image" : "https://via.placeholder.com/360",
+        "viewLink" : "",
+        "sourceLink": ""
+    },
+    {
+        "title" : "Lorem Ipsum",
+        "description" : "Lorem Ipsum Dolor est sit amet",
+        "image" : "https://via.placeholder.com/360",
+        "viewLink" : "",
+        "sourceLink": ""
+    },
+    {
+        "title" : "Lorem Ipsum",
+        "description" : "Lorem Ipsum Dolor est sit amet",
+        "image" : "https://via.placeholder.com/360",
+        "viewLink" : "",
+        "sourceLink": ""
+    },
+    {
+        "title" : "Lorem Ipsum",
+        "description" : "Lorem Ipsum Dolor est sit amet",
+        "image" : "https://via.placeholder.com/360",
+        "viewLink" : "",
+        "sourceLink": ""
+    },
+    {
+        "title" : "Lorem Ipsum",
+        "description" : "Lorem Ipsum Dolor est sit amet",
+        "image" : "https://via.placeholder.com/360",
+        "viewLink" : "",
+        "sourceLink": ""
+    }]
+}

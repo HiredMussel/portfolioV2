@@ -12,7 +12,8 @@
 
         height: 36rem;
 
-        background-color: black;
+        background-size: cover;
+        background-position: center;
 
         &:hover  .portfolioContent {
         opacity: 1;
@@ -61,7 +62,7 @@
                     width: 45%;
                     max-width: 9rem;
 
-                    background-color: $contentFontColour;
+                    background-color: transparent;
 
                     color: $contentBackground;
 
