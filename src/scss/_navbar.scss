@@ -1,14 +1,95 @@
-@media (max-width: $breakpointMobile) {
+@mixin navbuttonStyles {
+    display: inline-block;
+
+    width: 10rem;
+
+    font-family: $mainFont;
+    color: $linkInactive;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+
+    transition: 0.3s;
+
+    &:hover {
+        color: $contentBackground;
+        font-weight: 700;
+
+        transition: 0.3s;
+    }
+} 
+
+nav {
+    position: fixed;
+    top: 0;
+
+    height: 4.8rem;
+    width: 100%;
+
+    background-color: #000000;
+    z-index: 9999;
+
+    .logoContainer {
+        height: 4.8rem;
+        width: auto;
+    }
+
+    .navButtons {
+        float: right;
+
+        padding-top: 1.6rem;
+
+        a {
+            @include navbuttonStyles;
+        }
+    }
+
+    .navDropdown {
+        display: none;
+    }
+}
+@media only screen and (max-width: 50rem) {
     html {
         body {
             nav {
-                text-align: center;
                 .logoContainer {
-                    display: none;
+                    display: block;
+
+                    width: 100%;
+
+                    text-align: center;
                 }
                 .navButtons {
+                    display: none;
+                }
+                .navDropdown {
                     display: inline-block;
-                    float: none;
+
+                    a {
+                        @include navbuttonStyles;
+
+                        display: block;
+
+                        height: 4.8rem;
+                        width: 100%;
+
+                        text-align: center;
+
+                        padding-top: 1.6rem;
+                    }
+                }
+                overflow: hidden;
+                
+                height: 4.8rem;
+                
+                text-align: center;
+
+                transition: 0.3s;
+                &:hover {
+                    height: 24rem;
+                    
+                    transition: 0.3s;
                 }
             }
         }

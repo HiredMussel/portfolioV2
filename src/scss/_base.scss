@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    
+    font-size: 62.5%;
+
+    body {
+
+        background-image: url('../images/Background.svg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+
+        font-family: $mainFont;
+
+        #contact {
+            padding-top: 4.8rem;
+        }
+    }
+}

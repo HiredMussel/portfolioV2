@@ -1,9 +1,19 @@
+#portfolio {
+    padding-top: 4.8rem;
+}
+
 .portfolioContainer {
+
     margin: 0 auto;
+
     .portfolioItem {
-        height: 36rem;
+
         position: relative;
+
+        height: 36rem;
+
         background-color: black;
+
         &:hover  .portfolioContent {
         opacity: 1;
         transition: 0.3s;
@@ -14,43 +24,57 @@
             margin: 0;
         }
         p {
-            padding: 0 1rem;
-            margin: 0;
             font-size: 1.2rem;
             line-height: 1.6rem;
+            padding: 0 1rem;
+            margin: 0;
         }
         .portfolioContent {
-            position: relative;
-            background-color: black;
+
             display: inline-block;
             position: absolute;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
             top: 0;
             left: 0;
-            color: $contentBackground;
+
             background-color: rgba(0,0,0,0.7);
+            opacity: 0;
+
+            height: 100%;
+            width: 100%;
+            
+            color: $contentBackground;
+
             transition: 0.3s;
             z-index: -1;
             .portButtonContainer {
-                width: 100%;
+                
                 position: absolute;
                 bottom: 1rem;
-                margin: 0 auto;
+
+                width: 100%;
+
                 text-align: center;
+
+                margin: 0 auto;
+                
                 button {
                     width: 45%;
                     max-width: 9rem;
+
+                    background-color: $contentFontColour;
+
+                    color: $contentBackground;
+
                     border: 1px solid $contentBackground;
                     border-radius: 10px;
-                    color: $contentBackground;
-                    background-color: $contentFontColour;
+                    
                     transition: 0.3s;
                     &:hover {
-                        transition: 0.3s;
                         background-color: $contentBackground;
+
                         color: $contentFontColour;
+
+                        transition: 0.3s;
                     }
                 }
             }    
@@ -93,6 +117,10 @@
 }
 
 @media only screen and (max-width: 40rem) {
+    .portfolioContainer {
+        grid-column-gap: 0;
+    }
+
     .portfolioItem {
         grid-column: span 12;
     }
