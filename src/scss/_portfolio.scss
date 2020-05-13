@@ -1,0 +1,98 @@
+.portfolioContainer {
+    margin: 0 auto;
+    .portfolioItem {
+        height: 36rem;
+        position: relative;
+        background-color: black;
+        &:hover  .portfolioContent {
+        opacity: 1;
+        transition: 0.3s;
+        z-index: 1;
+        }
+        h1 {
+            padding: 1.6rem;
+            margin: 0;
+        }
+        p {
+            padding: 0 1rem;
+            margin: 0;
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        .portfolioContent {
+            position: relative;
+            background-color: black;
+            display: inline-block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            top: 0;
+            left: 0;
+            color: $contentBackground;
+            background-color: rgba(0,0,0,0.7);
+            transition: 0.3s;
+            z-index: -1;
+            .portButtonContainer {
+                width: 100%;
+                position: absolute;
+                bottom: 1rem;
+                margin: 0 auto;
+                text-align: center;
+                button {
+                    width: 45%;
+                    border: 1px solid $contentBackground;
+                    border-radius: 10px;
+                    color: $contentBackground;
+                    background-color: $contentFontColour;
+                    transition: 0.3s;
+                    &:hover {
+                        transition: 0.3s;
+                        background-color: $contentBackground;
+                        color: $contentFontColour;
+                    }
+                }
+            }    
+        }
+    }
+}
+
+.portfolioContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 2rem;
+}
+
+.l3Col {
+    grid-column: span 3;
+}
+
+.l6Col {
+    grid-column: span 6;
+}
+
+@media only screen and (max-width: 65rem) {
+    .m4Col {
+        grid-column: span 4;
+    }
+
+    .m6Col {
+        grid-column: span 6;
+    }
+}
+
+@media only screen and (max-width: 50rem) {
+    .portfolioItem {
+        grid-column: span 6;
+    }
+
+    .sSpan {
+        grid-column: span 12;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .portfolioItem {
+        grid-column: span 12;
+    }
+}
