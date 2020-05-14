@@ -1,0 +1,14 @@
+footer {
+    position: absolute;
+    bottom: -1.6rem;
+
+    z-index: 1;
+
+    width: 100%;
+
+    background-color: $contentFontColour;
+
+    color: $contentBackground;
+
+    padding: 0.3rem;
+}

@@ -1,37 +1,37 @@
 {
     "portfolioItems" : [{
-        "title" : "Lorem Ipsum",
-        "description" : "Lorem Ipsum Dolor est sit amet",
-        "image" : "https://via.placeholder.com/360",
+        "title" : "Binary Challenge",
+        "description" : "Having been set the challenge of creating a toy application which would calculate the length of a fence from the numbers of posts and railings, I decided the best way to do this would be to write a library to perform all the necessary mathematical operations in binary.",
+        "image" : "dist/images/BinaryChallengeScreenShot.png",
         "viewLink" : "",
-        "sourceLink": ""
+        "sourceLink": "https://github.com/HiredMussel/BinaryChallenge"
     },
     {
-        "title" : "Lorem Ipsum",
-        "description" : "Lorem Ipsum Dolor est sit amet",
-        "image" : "https://via.placeholder.com/360",
+        "title" : "Counting Challenge",
+        "description" : "I decided that in order to test my ability to learn new systems, I would complete a simple toy assignment in a particularly minimal esoteric programming language. Before doing this, I had to implement an interpreter so my code written in this language could run in PHP.",
+        "image" : "dist/images/EsoLangScreenshot.png",
         "viewLink" : "",
-        "sourceLink": ""
+        "sourceLink": "https://github.com/HiredMussel/brainfuckChallenge"
     },
     {
         "title" : "This Site!",
-        "description" : "I designed and built this site myself using HTML, SCSS and TypeScript. I even built the background image myself! You can view the source code on GitHub if you're curious.",
-        "image" : "https://via.placeholder.com/360",
+        "description" : "I designed and built this site myself using HTML, SCSS and TypeScript. I even built the background image myself! You can view the sourBce code on GitHub if you're curious.",
+        "image" : "dist/images/PortfolioScreenShot.png",
         "viewLink" : "",
-        "sourceLink": ""
+        "sourceLink": "https://github.com/HiredMussel/portfolioV2"
     },
     {
-        "title" : "Lorem Ipsum",
-        "description" : "Lorem Ipsum Dolor est sit amet",
-        "image" : "https://via.placeholder.com/360",
-        "viewLink" : "",
-        "sourceLink": ""
+        "title" : "Card Game",
+        "description" : "A group project completed at Mayden Academy, we designed and put together a simple card game powered by JavaScript.",
+        "image" : "dist/images/CardGameScreenshot.png",
+        "viewLink" : "https://dev.maydenacademy.co.uk/projects/2020Feb/2020-feb-card-game/",
+        "sourceLink": "https://github.com/Mayden-Academy/2020-feb-card-game"
     },
     {
-        "title" : "Lorem Ipsum",
-        "description" : "Lorem Ipsum Dolor est sit amet",
-        "image" : "https://via.placeholder.com/360",
-        "viewLink" : "",
-        "sourceLink": ""
+        "title" : "Naked Mole Flats",
+        "description" : "A group project completed at Mayden Academy, we designed and created a fake housing website over the course of three days using PHP.",
+        "image" : "dist/images/NakedMoleFlatsScreenshot.png",
+        "viewLink" : "https://dev.maydenacademy.co.uk/projects/2020Feb/2020-frb-nakedMoleFlats/",
+        "sourceLink": "https://github.com/Mayden-Academy/2020-feb-nakedMoleFlats"
     }]
 }
