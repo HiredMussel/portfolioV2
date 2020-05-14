@@ -1,0 +1,30 @@
+.picOfMe {
+    display: inline-block;
+
+    width: 39%;
+    max-width: 36rem;
+}
+.bioContainer {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 60%;
+
+    padding: 0 2rem;
+
+    h2 {
+        margin-top: 0;
+    }
+    p {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 55rem) {
+    .picOfMe {
+        display: block;
+
+        width: 100%;
+        
+        margin: 0 auto;
+    }
+}
